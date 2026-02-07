@@ -11,12 +11,6 @@ return {
     terminal = {
       enabled = true,
       interactive = true,
-      win = {
-        style = "float",
-        width = math.floor(vim.o.columns * 0.95),
-        height = math.floor(vim.o.columns * 0.95),
-        border = "rounded",
-      },
     },
   },
 }
