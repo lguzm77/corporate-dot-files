@@ -18,6 +18,14 @@ keymapset("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -
 keymapset("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymapset("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
+-- Window navigation
+-- Move window
+keymapset("n", "sh", "<C-w>h")
+keymapset("n", "sk", "<C-w>k")
+keymapset("n", "sj", "<C-w>j")
+keymapset("n", "sl", "<C-w>l")
+
+-- Buffer navigation
 keymapset("n", "<C-d>", "<C-d>zz", non_recursive_option) -- zz centers your cursor
 keymapset("n", "<C-u>", "<C-u>zz", non_recursive_option)
 keymapset("n", "<C-f>", "<C-f>zz", non_recursive_option)
