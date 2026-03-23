@@ -12,3 +12,14 @@ vim.api.nvim_create_autocmd("User", {
     vim.wo.wrap = true
   end,
 })
+
+-- Wrap lines when presenting a diff
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "*",
+  callback = function()
+    if vim.opt.diff:get() then
+      vim.opt.wrap = true
+      vim.opt.linebreak = true
+    end
+  end,
+})
